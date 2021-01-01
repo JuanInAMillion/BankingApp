@@ -1,6 +1,7 @@
 package com.app.main;
 
 import org.apache.log4j.Logger;
+import org.junit.jupiter.api.Test;
 
 public class Main {
 	
@@ -10,5 +11,7 @@ public class Main {
 		log.trace("Hello");
 		
 	}
+	
+
 
 }
