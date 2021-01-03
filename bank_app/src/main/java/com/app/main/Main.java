@@ -56,7 +56,7 @@ public class Main {
 		
 		
 /*
-		Customer c = new Customer(4, "Fabidaly", "Valera", "12/4/2006", "F", "111-11-1111", "111 111 111", "313 Gates Place", "1E", "Bronx", "NY", "86753", "Fabidaly@gmail.com", "342423333");
+		Customer c = new Customer(4, "Fabidaly", "Valera", "12/4/2006", "F", "111-11-1111", "111 111 111", "342423333", "Fabidaly@gmail.com");
 		try {
 			if(cruddao.createCustomer(c)!=0) {
 				log.info("\nCreated Successfully");
@@ -67,7 +67,7 @@ public class Main {
 */
 /*		
 		try {
-			Customer customer=searchdao.getCustomerById(2);
+			Customer customer=searchdao.getCustomerById(1);
 			if(customer!=null) {
 				log.info("\nDetails of customer with id of " + customer.getCustomer_id());
 				log.info(customer);

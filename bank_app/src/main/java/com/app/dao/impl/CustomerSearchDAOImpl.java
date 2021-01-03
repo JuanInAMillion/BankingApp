@@ -18,7 +18,7 @@ public class CustomerSearchDAOImpl implements CustomerSearchDAO{
 	public Customer getCustomerById(int customer_id) throws BusinessException {
 		Customer customer = null;
 		try(Connection connection = PostgresSqlConnection.getConnection()) {
-			String sql = "select first_name, last_name, dob, gender, ssn, state_id, street, apt, city, state, zip, email, phone from bank.customer where customer_id=? ";
+			String sql = "select first_name, last_name, dob, gender, ssn, state_id, phone, email from bank.customer where customer_id=? ";
 			PreparedStatement preparedStatement=connection.prepareStatement(sql);
 			preparedStatement.setInt(1, customer_id);
 			ResultSet resultSet=preparedStatement.executeQuery();
@@ -31,13 +31,8 @@ public class CustomerSearchDAOImpl implements CustomerSearchDAO{
 				customer.setGender(resultSet.getString("gender"));
 				customer.setSsn(resultSet.getString("ssn"));
 				customer.setState_id(resultSet.getString("state_id"));
-				customer.setStreet(resultSet.getString("street"));
-				customer.setApt(resultSet.getString("apt"));
-				customer.setCity(resultSet.getString("city"));
-				customer.setState(resultSet.getString("state"));
-				customer.setZip(resultSet.getString("zip"));
-				customer.setEmail(resultSet.getString("email"));
 				customer.setPhone(resultSet.getString("phone"));
+				customer.setEmail(resultSet.getString("email"));
 			} else {
 				throw new BusinessException("No Customer Found wit id " + customer_id);
 			}
@@ -50,9 +45,9 @@ public class CustomerSearchDAOImpl implements CustomerSearchDAO{
 
 	@Override
 	public List<Customer> getAllCustomers() throws BusinessException {
-		List<Customer> customerList = new ArrayList();
+		List<Customer> customerList = new ArrayList<>();
 		try(Connection connection = PostgresSqlConnection.getConnection()) {
-			String sql = "select customer_id, first_name, last_name, dob, gender, ssn, state_id, street, apt, city, state, zip, email, phone from bank.customer";
+			String sql = "select customer_id, first_name, last_name, dob, gender, ssn, state_id, phone, email from bank.customer";
 			PreparedStatement preparedStatement=connection.prepareStatement(sql);
 		
 			ResultSet resultSet=preparedStatement.executeQuery();
@@ -65,13 +60,8 @@ public class CustomerSearchDAOImpl implements CustomerSearchDAO{
 				customer.setGender(resultSet.getString("gender"));
 				customer.setSsn(resultSet.getString("ssn"));
 				customer.setState_id(resultSet.getString("state_id"));
-				customer.setStreet(resultSet.getString("street"));
-				customer.setApt(resultSet.getString("apt"));
-				customer.setCity(resultSet.getString("city"));
-				customer.setState(resultSet.getString("state"));
-				customer.setZip(resultSet.getString("zip"));
-				customer.setEmail(resultSet.getString("email"));
 				customer.setPhone(resultSet.getString("phone"));
+				customer.setEmail(resultSet.getString("email"));
 				customerList.add(customer);
 			} if(customerList.size()==0) {
 				throw new BusinessException("No Customer in DB so far");

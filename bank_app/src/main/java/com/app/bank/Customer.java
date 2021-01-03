@@ -8,20 +8,15 @@ public class Customer {
 	private String gender;
 	private String ssn;
 	private String state_id;
-	private String street;
-	private String apt;
-	private String city;
-	private String state;
-	private String zip;
-	private String email;
 	private String phone;
+	private String email;
 	
 	public Customer() {
 		// TODO Auto-generated constructor stub
 	}
 
 	public Customer(int customer_id, String first_name, String last_name, String dob, String gender, String ssn,
-			String state_id, String street, String apt, String city, String state, String zip, String email, String phone) {
+			String state_id, String phone, String email) {
 		super();
 		this.customer_id = customer_id;
 		this.first_name = first_name;
@@ -30,13 +25,8 @@ public class Customer {
 		this.gender = gender;
 		this.ssn = ssn;
 		this.state_id = state_id;
-		this.street = street;
-		this.apt = apt;
-		this.city = city;
-		this.state = state;
-		this.zip = zip;
-		this.email = email;
 		this.phone = phone;
+		this.email = email;
 	}
 
 	public int getCustomer_id() {
@@ -94,45 +84,13 @@ public class Customer {
 	public void setState_id(String state_id) {
 		this.state_id = state_id;
 	}
-
-	public String getStreet() {
-		return street;
+	
+	public String getPhone() {
+		return phone;
 	}
 
-	public void setStreet(String street) {
-		this.street = street;
-	}
-
-	public String getApt() {
-		return apt;
-	}
-
-	public void setApt(String apt) {
-		this.apt = apt;
-	}
-
-	public String getCity() {
-		return city;
-	}
-
-	public void setCity(String city) {
-		this.city = city;
-	}
-
-	public String getState() {
-		return state;
-	}
-
-	public void setState(String state) {
-		this.state = state;
-	}
-
-	public String getZip() {
-		return zip;
-	}
-
-	public void setZip(String zip) {
-		this.zip = zip;
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 
 	public String getEmail() {
@@ -143,21 +101,15 @@ public class Customer {
 		this.email = email;
 	}
 
-	public String getPhone() {
-		return phone;
-	}
-
-	public void setPhone(String phone) {
-		this.phone = phone;
-	}
-
 	@Override
 	public String toString() {
 		return "Customer [customer_id=" + customer_id + ", first_name=" + first_name + ", last_name=" + last_name
-				+ ", dob=" + dob + ", gender=" + gender + ", ssn=" + ssn + ", state_id=" + state_id + ", street="
-				+ street + ", apt=" + apt + ", city=" + city + ", state=" + state + ", zip=" + zip + ", email=" + email
-				+ ", phone=" + phone + "]";
+				+ ", dob=" + dob + ", gender=" + gender + ", ssn=" + ssn + ", state_id=" + state_id + ", phone=" + phone
+				+ ", email=" + email + "]";
 	}
+
+	
+	
 
 	
 }

@@ -11,3 +11,17 @@ Customer [customer_id=3, first_name=Fabidaly, last_name=Valera, dob=12/4/2006, g
 Customer [customer_id=2, first_name=Jissela, last_name=Murillo, dob=1990-01-30 -05, gender=F, ssn=000-00-0001, state_id=000 000 001, street=123 Sakura St, apt=null, city=Staten Island, state=NY, zip=10304, email=jissela@yahoo.com, phone=9175553333]  Sunday 01-03-2021 01:06:37 EST
 
 Created Successfully  Sunday 01-03-2021 01:07:29 EST
+
+Created Successfully  Sunday 01-03-2021 12:10:42 EST
+
+Details of customer with id of 2  Sunday 01-03-2021 12:12:59 EST
+Customer [customer_id=2, first_name=Jissela, last_name=Murillo, dob=1/30/90, gender=F, ssn=000-00-0001, state_id=000 000 001, phone=9175553333, email=jissela@gmail.com]  Sunday 01-03-2021 12:12:59 EST
+No Customer Found wit id 4  Sunday 01-03-2021 12:13:09 EST
+
+Details of customer with id of 1  Sunday 01-03-2021 12:13:16 EST
+Customer [customer_id=1, first_name=Juan, last_name=Alcantara, dob=1/2/90, gender=M, ssn=000-00-0000, state_id=000 000 000 , phone=6265552222, email=juan231f@yahoo.com]  Sunday 01-03-2021 12:13:16 EST
+
+Found 3 customers in the DB...  Sunday 01-03-2021 12:13:42 EST
+Customer [customer_id=2, first_name=Jissela, last_name=Murillo, dob=1/30/90, gender=F, ssn=000-00-0001, state_id=000 000 001, phone=9175553333, email=jissela@gmail.com]  Sunday 01-03-2021 12:13:42 EST
+Customer [customer_id=1, first_name=Juan, last_name=Alcantara, dob=1/2/90, gender=M, ssn=000-00-0000, state_id=000 000 000 , phone=6265552222, email=juan231f@yahoo.com]  Sunday 01-03-2021 12:13:42 EST
+Customer [customer_id=3, first_name=Fabidaly, last_name=Valera, dob=12/4/06, gender=F, ssn=111-11-1111, state_id=111 111 111, phone=342423333, email=fabidaly@yahoo.com]  Sunday 01-03-2021 12:13:42 EST
