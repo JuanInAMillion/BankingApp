@@ -1,13 +1,13 @@
-package com.app.dao.impl;
+package com.bank.dao.impl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-import com.app.bank.Customer;
 import com.app.dao.CustomerCrudDAO;
-import com.app.dao.dbutil.PostgresSqlConnection;
-import com.app.exception.BusinessException;
+import com.bank.dao.dbutil.PostgresSqlConnection;
+import com.bank.exception.BusinessException;
+import com.bank.model.Customer;
 
 public class CustomerCrudDAOImpl implements CustomerCrudDAO{
 

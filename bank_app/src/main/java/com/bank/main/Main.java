@@ -1,16 +1,16 @@
-package com.app.main;
+package com.bank.main;
 
 import java.util.List;
 import java.util.Scanner;
 
 import org.apache.log4j.Logger;
 
-import com.app.bank.Customer;
 import com.app.dao.CustomerCrudDAO;
 import com.app.dao.CustomerSearchDAO;
-import com.app.dao.impl.CustomerCrudDAOImpl;
-import com.app.dao.impl.CustomerSearchDAOImpl;
-import com.app.exception.BusinessException;
+import com.bank.dao.impl.CustomerCrudDAOImpl;
+import com.bank.dao.impl.CustomerSearchDAOImpl;
+import com.bank.exception.BusinessException;
+import com.bank.model.Customer;
 
 public class Main {
 	
@@ -19,32 +19,32 @@ public class Main {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Welcome to Chase Bank");
-		System.out.println("-----------------------");
+		log.info("Welcome to Chase Bank");
+		log.info("-----------------------");
 		int ch = 0;
 		
 		do {
-			System.out.println("Customer Options");
-			System.out.println("=======================");
-			System.out.println("1)Login");
-			System.out.println("2)Sign Up");
-			System.out.println("3)EXIT");
+			log.info("Customer Options");
+			log.info("=======================");
+			log.info("1)Login");
+			log.info("2)Sign Up");
+			log.info("3)EXIT");
 			try {
 				ch=Integer.parseInt(sc.nextLine());
 			} catch(NumberFormatException e) {}
 			
 			switch(ch) {
 			case 1:
-				System.out.println("\nChoice 1\n");
+				log.info("\nChoice 1\n");
 				break;
 			case 2:
-				System.out.println("\nChoice 2\n");
+				log.info("\nChoice 2\n");
 				break;
 			case 3:
-				System.out.println("\nGoodbye, have a nice day!\n");
+				log.info("\nGoodbye, have a nice day!\n");
 				break;
 			default:
-				System.out.println("\nInvalid Menu Option... Kindly Retry\n");
+				log.info("\nInvalid Menu Option... Kindly Retry\n");
 				break;
 			}
 		} while(ch != 3);

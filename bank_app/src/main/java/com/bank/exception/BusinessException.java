@@ -1,4 +1,4 @@
-package com.app.exception;
+package com.bank.exception;
 
 public class BusinessException extends Exception{
 

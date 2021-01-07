@@ -1,4 +1,4 @@
-package com.app.dao.dbutil;
+package com.bank.dao.dbutil;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

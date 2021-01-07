@@ -1,4 +1,4 @@
-package com.app.service;
+package com.bank.service;
 
 public interface CustomerSearchService {
 

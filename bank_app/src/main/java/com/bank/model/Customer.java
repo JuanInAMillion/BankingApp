@@ -1,4 +1,4 @@
-package com.app.bank;
+package com.bank.model;
 
 public class Customer {
 	private int customer_id;
