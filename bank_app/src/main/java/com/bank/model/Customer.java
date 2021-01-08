@@ -6,17 +6,17 @@ public class Customer {
 	private String last_name;
 	private String dob;
 	private String gender;
-	private String ssn;
-	private String state_id;
-	private String phone;
+	private long ssn;
+	private long state_id;
+	private long phone;
 	private String email;
 	
 	public Customer() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Customer(int customer_id, String first_name, String last_name, String dob, String gender, String ssn,
-			String state_id, String phone, String email) {
+	public Customer(int customer_id, String first_name, String last_name, String dob, String gender, long ssn,
+			long state_id, long phone, String email) {
 		super();
 		this.customer_id = customer_id;
 		this.first_name = first_name;
@@ -69,27 +69,27 @@ public class Customer {
 		this.gender = gender;
 	}
 
-	public String getSsn() {
+	public long getSsn() {
 		return ssn;
 	}
 
-	public void setSsn(String ssn) {
+	public void setSsn(long ssn) {
 		this.ssn = ssn;
 	}
 	
-	public String getState_id() {
+	public long getState_id() {
 		return state_id;
 	}
 
-	public void setState_id(String state_id) {
+	public void setState_id(long state_id) {
 		this.state_id = state_id;
 	}
 	
-	public String getPhone() {
+	public long getPhone() {
 		return phone;
 	}
 
-	public void setPhone(String phone) {
+	public void setPhone(long phone) {
 		this.phone = phone;
 	}
 
@@ -104,7 +104,7 @@ public class Customer {
 	@Override
 	public String toString() {
 		return "Customer [customer_id=" + customer_id + ", first_name=" + first_name + ", last_name=" + last_name
-				+ ", dob=" + dob + ", gender=" + gender + ", ssn=" + ssn + ", state_id=" + state_id + ", phone=" + phone
+				+ ", dob=" + dob + ", gender=" + gender + ", ssn=" + ssn + ", state_id=" + state_id + ", phone=1+" + phone
 				+ ", email=" + email + "]";
 	}
 

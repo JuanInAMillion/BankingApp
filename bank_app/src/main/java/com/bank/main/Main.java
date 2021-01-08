@@ -17,7 +17,7 @@ public class Main {
 	private static Logger log=Logger.getLogger(Main.class);
 	
 	public static void main(String[] args) {
-		
+	
 		Scanner sc = new Scanner(System.in);
 		log.info("Welcome to Chase Bank");
 		log.info("-----------------------");
@@ -51,8 +51,8 @@ public class Main {
 		
 		
 		
-		CustomerCrudDAO cruddao = new CustomerCrudDAOImpl();
-		CustomerSearchDAO searchdao = new CustomerSearchDAOImpl();
+//		CustomerCrudDAO cruddao = new CustomerCrudDAOImpl();
+//		CustomerSearchDAO searchdao = new CustomerSearchDAOImpl();
 		
 		
 /*
@@ -76,7 +76,7 @@ public class Main {
 			log.error(e.getMessage());
 		};
 */
-/*		
+/*	
 		try {
 			List<Customer> customerList=searchdao.getAllCustomers();
 			if(customerList!=null && customerList.size()!=0) {

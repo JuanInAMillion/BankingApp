@@ -1,7 +1,5 @@
 package com.app.dao;
 
-import java.util.List;
-
 import com.bank.exception.BusinessException;
 import com.bank.model.Customer;
 

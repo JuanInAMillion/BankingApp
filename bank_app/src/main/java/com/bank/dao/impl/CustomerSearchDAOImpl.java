@@ -29,9 +29,9 @@ public class CustomerSearchDAOImpl implements CustomerSearchDAO{
 				customer.setLast_name(resultSet.getString("last_name"));
 				customer.setDob(resultSet.getString("dob"));
 				customer.setGender(resultSet.getString("gender"));
-				customer.setSsn(resultSet.getString("ssn"));
-				customer.setState_id(resultSet.getString("state_id"));
-				customer.setPhone(resultSet.getString("phone"));
+				customer.setSsn(resultSet.getLong("ssn"));
+				customer.setState_id(resultSet.getLong("state_id"));
+				customer.setPhone(resultSet.getLong("phone"));
 				customer.setEmail(resultSet.getString("email"));
 			} else {
 				throw new BusinessException("No Customer Found wit id " + customer_id);
@@ -58,9 +58,9 @@ public class CustomerSearchDAOImpl implements CustomerSearchDAO{
 				customer.setLast_name(resultSet.getString("last_name"));
 				customer.setDob(resultSet.getString("dob"));
 				customer.setGender(resultSet.getString("gender"));
-				customer.setSsn(resultSet.getString("ssn"));
-				customer.setState_id(resultSet.getString("state_id"));
-				customer.setPhone(resultSet.getString("phone"));
+				customer.setSsn(resultSet.getLong("ssn"));
+				customer.setState_id(resultSet.getLong("state_id"));
+				customer.setPhone(resultSet.getLong("phone"));
 				customer.setEmail(resultSet.getString("email"));
 				customerList.add(customer);
 			} if(customerList.size()==0) {

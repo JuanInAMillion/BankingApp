@@ -22,9 +22,9 @@ public class CustomerCrudDAOImpl implements CustomerCrudDAO{
 			preparedStatement.setString(3, customer.getLast_name());
 			preparedStatement.setString(4, customer.getDob());
 			preparedStatement.setString(5, customer.getGender());
-			preparedStatement.setString(6, customer.getSsn());
-			preparedStatement.setString(7, customer.getState_id());
-			preparedStatement.setString(8, customer.getPhone());	
+			preparedStatement.setLong(6, customer.getSsn());
+			preparedStatement.setLong(7, customer.getState_id());
+			preparedStatement.setLong(8, customer.getPhone());	
 			preparedStatement.setString(9, customer.getEmail());
 			c=preparedStatement.executeUpdate();		
 		} catch (ClassNotFoundException | SQLException e) {
