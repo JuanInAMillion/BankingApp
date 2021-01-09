@@ -7,7 +7,7 @@ public class Customer {
 	private String dob;
 	private String gender;
 	private long ssn;
-	private long state_id;
+	private String address;
 	private long phone;
 	private String email;
 	
@@ -16,7 +16,7 @@ public class Customer {
 	}
 
 	public Customer(int customer_id, String first_name, String last_name, String dob, String gender, long ssn,
-			long state_id, long phone, String email) {
+			String address, long phone, String email) {
 		super();
 		this.customer_id = customer_id;
 		this.first_name = first_name;
@@ -24,7 +24,7 @@ public class Customer {
 		this.dob = dob;
 		this.gender = gender;
 		this.ssn = ssn;
-		this.state_id = state_id;
+		this.address = address;
 		this.phone = phone;
 		this.email = email;
 	}
@@ -77,12 +77,12 @@ public class Customer {
 		this.ssn = ssn;
 	}
 	
-	public long getState_id() {
-		return state_id;
+	public String getAddress() {
+		return address;
 	}
 
-	public void setState_id(long state_id) {
-		this.state_id = state_id;
+	public void setAddress(String address) {
+		this.address = address;
 	}
 	
 	public long getPhone() {
@@ -104,12 +104,9 @@ public class Customer {
 	@Override
 	public String toString() {
 		return "Customer [customer_id=" + customer_id + ", first_name=" + first_name + ", last_name=" + last_name
-				+ ", dob=" + dob + ", gender=" + gender + ", ssn=" + ssn + ", state_id=" + state_id + ", phone=1+" + phone
+				+ ", dob=" + dob + ", gender=" + gender + ", ssn=" + ssn + ", address=" + address + ", phone=1+" + phone
 				+ ", email=" + email + "]";
 	}
-
-	
-	
 
 	
 }

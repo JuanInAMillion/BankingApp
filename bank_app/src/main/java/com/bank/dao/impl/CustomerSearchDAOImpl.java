@@ -18,7 +18,7 @@ public class CustomerSearchDAOImpl implements CustomerSearchDAO{
 	public Customer getCustomerById(int customer_id) throws BusinessException {
 		Customer customer = null;
 		try(Connection connection = PostgresSqlConnection.getConnection()) {
-			String sql = "select first_name, last_name, dob, gender, ssn, state_id, phone, email from bank.customer where customer_id=? ";
+			String sql = "select first_name, last_name, dob, gender, ssn, address, phone, email from bank.customer where customer_id=? ";
 			PreparedStatement preparedStatement=connection.prepareStatement(sql);
 			preparedStatement.setInt(1, customer_id);
 			ResultSet resultSet=preparedStatement.executeQuery();
@@ -30,7 +30,7 @@ public class CustomerSearchDAOImpl implements CustomerSearchDAO{
 				customer.setDob(resultSet.getString("dob"));
 				customer.setGender(resultSet.getString("gender"));
 				customer.setSsn(resultSet.getLong("ssn"));
-				customer.setState_id(resultSet.getLong("state_id"));
+				customer.setAddress(resultSet.getString("address"));
 				customer.setPhone(resultSet.getLong("phone"));
 				customer.setEmail(resultSet.getString("email"));
 			} else {
@@ -47,7 +47,7 @@ public class CustomerSearchDAOImpl implements CustomerSearchDAO{
 	public List<Customer> getAllCustomers() throws BusinessException {
 		List<Customer> customerList = new ArrayList<>();
 		try(Connection connection = PostgresSqlConnection.getConnection()) {
-			String sql = "select customer_id, first_name, last_name, dob, gender, ssn, state_id, phone, email from bank.customer";
+			String sql = "select customer_id, first_name, last_name, dob, gender, ssn, address, phone, email from bank.customer";
 			PreparedStatement preparedStatement=connection.prepareStatement(sql);
 		
 			ResultSet resultSet=preparedStatement.executeQuery();
@@ -59,7 +59,7 @@ public class CustomerSearchDAOImpl implements CustomerSearchDAO{
 				customer.setDob(resultSet.getString("dob"));
 				customer.setGender(resultSet.getString("gender"));
 				customer.setSsn(resultSet.getLong("ssn"));
-				customer.setState_id(resultSet.getLong("state_id"));
+				customer.setAddress(resultSet.getString("address"));
 				customer.setPhone(resultSet.getLong("phone"));
 				customer.setEmail(resultSet.getString("email"));
 				customerList.add(customer);

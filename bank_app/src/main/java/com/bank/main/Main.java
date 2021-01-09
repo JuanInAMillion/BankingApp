@@ -51,8 +51,8 @@ public class Main {
 		
 		
 		
-//		CustomerCrudDAO cruddao = new CustomerCrudDAOImpl();
-//		CustomerSearchDAO searchdao = new CustomerSearchDAOImpl();
+	//	CustomerCrudDAO cruddao = new CustomerCrudDAOImpl();
+	//	CustomerSearchDAO searchdao = new CustomerSearchDAOImpl();
 		
 		
 /*
