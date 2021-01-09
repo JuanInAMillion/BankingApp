@@ -15,7 +15,7 @@ public class CustomerCrudDAOImpl implements CustomerCrudDAO{
 	public int createCustomer(Customer customer) throws BusinessException {
 		int c = 0;
 		try(Connection connection = PostgresSqlConnection.getConnection()) {
-			String sql="insert into bank.customer(customer_id, first_name, last_name, dob, gender, ssn, address, phone, email) values(?,?,?,?,?,?,?,?,?)";
+			String sql="insert into bank.customer(customer_id, first_name, last_name, dob, gender, ssn, adress, phone, email) values(?,?,?,?,?,?,?,?,?)";
 			PreparedStatement preparedStatement=connection.prepareStatement(sql);			
 			preparedStatement.setInt(1, customer.getCustomer_id());
 			preparedStatement.setString(2, customer.getFirst_name());

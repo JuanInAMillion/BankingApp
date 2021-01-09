@@ -76,19 +76,7 @@ public class Main {
 			log.error(e.getMessage());
 		};
 */
-/*	
-		try {
-			List<Customer> customerList=searchdao.getAllCustomers();
-			if(customerList!=null && customerList.size()!=0) {
-				log.info("\nFound " +customerList.size()+ " customers in the DB...");
-				for(Customer c:customerList) {
-					log.info(c);
-				}
-			}
-		} catch (BusinessException e) {
-			log.error(e.getMessage());
-		}
-*/		
+
 		
 	}
 }
