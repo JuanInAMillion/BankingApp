@@ -1,0 +1,376 @@
+{INFO}	10-01-2021 Sunday EST 18:57:20	consoleLog.Main     	Welcome to Chase Bank                              
+{INFO}	10-01-2021 Sunday EST 18:57:20	consoleLog.Main     	-----------------------                            
+{INFO}	10-01-2021 Sunday EST 18:57:20	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 18:57:20	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 18:57:20	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 18:57:20	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 18:57:20	consoleLog.Main     	3)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 18:57:24	consoleLog.Main     	Enter Your Email:                                  
+{INFO}	10-01-2021 Sunday EST 18:57:30	consoleLog.Main     	Enter Your Password:                               
+{INFO}	10-01-2021 Sunday EST 18:57:34	consoleLog.Main     	Customer [customer_id=1, first_name=Juan, last_name=Alcantara, dob=1990-01-02, gender=M, ssn=111111111, address=123 Creston Ave, phone=8005551234, email=juan231f@yahoo.com, password=password1] 
+{INFO}	10-01-2021 Sunday EST 18:57:34	consoleLog.Main     	                                                   
+{INFO}	10-01-2021 Sunday EST 18:57:34	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 18:57:34	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 18:57:34	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 18:57:34	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 18:57:34	consoleLog.Main     	3)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 19:55:20	consoleLog.Main     	Welcome to Chase Bank                              
+{INFO}	10-01-2021 Sunday EST 19:55:20	consoleLog.Main     	-----------------------                            
+{INFO}	10-01-2021 Sunday EST 19:55:20	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 19:55:20	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 19:55:20	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 19:55:20	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 19:55:20	consoleLog.Main     	3)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 19:55:24	consoleLog.Main     	Enter Your Email:                                  
+{INFO}	10-01-2021 Sunday EST 19:55:28	consoleLog.Main     	Enter Your Password:                               
+{INFO}	10-01-2021 Sunday EST 19:57:23	consoleLog.Main     	Welcome to Chase Bank                              
+{INFO}	10-01-2021 Sunday EST 19:57:23	consoleLog.Main     	-----------------------                            
+{INFO}	10-01-2021 Sunday EST 19:57:23	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 19:57:23	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 19:57:23	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 19:57:23	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 19:57:23	consoleLog.Main     	3)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 19:57:28	consoleLog.Main     	Enter Your First Name:                             
+{INFO}	10-01-2021 Sunday EST 19:57:34	consoleLog.Main     	Enter Your Last Name:                              
+{INFO}	10-01-2021 Sunday EST 19:57:41	consoleLog.Main     	Enter Your Dob yyyy-mm-dd:                         
+{INFO}	10-01-2021 Sunday EST 19:57:49	consoleLog.Main     	Welcome to Chase Bank                              
+{INFO}	10-01-2021 Sunday EST 19:57:49	consoleLog.Main     	-----------------------                            
+{INFO}	10-01-2021 Sunday EST 19:57:49	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 19:57:49	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 19:57:49	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 19:57:49	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 19:57:49	consoleLog.Main     	3)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 19:57:54	consoleLog.Main     	Enter Your Email:                                  
+{INFO}	10-01-2021 Sunday EST 19:58:00	consoleLog.Main     	Enter Your Password:                               
+{INFO}	10-01-2021 Sunday EST 19:58:47	consoleLog.Main     	Welcome to Chase Bank                              
+{INFO}	10-01-2021 Sunday EST 19:58:47	consoleLog.Main     	-----------------------                            
+{INFO}	10-01-2021 Sunday EST 19:58:47	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 19:58:47	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 19:58:47	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 19:58:47	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 19:58:47	consoleLog.Main     	3)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 19:58:49	consoleLog.Main     	Enter Your Email:                                  
+{INFO}	10-01-2021 Sunday EST 19:58:55	consoleLog.Main     	Enter Your Password:                               
+{INFO}	10-01-2021 Sunday EST 19:59:21	consoleLog.Main     	Welcome to Chase Bank                              
+{INFO}	10-01-2021 Sunday EST 19:59:21	consoleLog.Main     	-----------------------                            
+{INFO}	10-01-2021 Sunday EST 19:59:21	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 19:59:21	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 19:59:21	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 19:59:21	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 19:59:21	consoleLog.Main     	3)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 19:59:22	consoleLog.Main     	Enter Your Email:                                  
+{INFO}	10-01-2021 Sunday EST 19:59:27	consoleLog.Main     	Enter Your Password:                               
+{INFO}	10-01-2021 Sunday EST 19:59:35	consoleLog.Main     	Customer [customer_id=1, first_name=Juan, last_name=Alcantara, dob=null, gender=null, ssn=0, address=null, phone=0, email=null, password=null] 
+{INFO}	10-01-2021 Sunday EST 19:59:35	consoleLog.Main     	                                                   
+{INFO}	10-01-2021 Sunday EST 19:59:35	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 19:59:35	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 19:59:35	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 19:59:35	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 19:59:35	consoleLog.Main     	3)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:00:58	consoleLog.Main     	Welcome to Chase Bank                              
+{INFO}	10-01-2021 Sunday EST 20:00:58	consoleLog.Main     	-----------------------                            
+{INFO}	10-01-2021 Sunday EST 20:00:58	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:00:58	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:00:58	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:00:58	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:00:58	consoleLog.Main     	3)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:01:00	consoleLog.Main     	Enter Your Email:                                  
+{INFO}	10-01-2021 Sunday EST 20:01:04	consoleLog.Main     	Enter Your Password:                               
+{INFO}	10-01-2021 Sunday EST 20:01:07	consoleLog.Main     	Customer [customer_id=1, first_name=Juan, last_name=Alcantara, dob=null, gender=null, ssn=0, address=null, phone=0, email=null, password=null] 
+{INFO}	10-01-2021 Sunday EST 20:01:07	consoleLog.Main     	                                                   
+{INFO}	10-01-2021 Sunday EST 20:01:07	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:01:07	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:01:07	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:01:07	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:01:07	consoleLog.Main     	3)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:02:01	consoleLog.Main     	Welcome to Chase Bank                              
+{INFO}	10-01-2021 Sunday EST 20:02:01	consoleLog.Main     	-----------------------                            
+{INFO}	10-01-2021 Sunday EST 20:02:01	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:02:01	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:02:01	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:02:01	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:02:01	consoleLog.Main     	3)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:02:04	consoleLog.Main     	Enter Your Email:                                  
+{INFO}	10-01-2021 Sunday EST 20:02:10	consoleLog.Main     	Enter Your Password:                               
+{INFO}	10-01-2021 Sunday EST 20:02:13	consoleLog.Main     	Customer [customer_id=1, first_name=Juan, last_name=Alcantara, dob=null, gender=null, ssn=0, address=null, phone=0, email=null, password=null] 
+{INFO}	10-01-2021 Sunday EST 20:02:13	consoleLog.Main     	                                                   
+{INFO}	10-01-2021 Sunday EST 20:02:13	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:02:13	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:02:13	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:02:13	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:02:13	consoleLog.Main     	3)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:02:37	consoleLog.Main     	Welcome to Chase Bank                              
+{INFO}	10-01-2021 Sunday EST 20:02:37	consoleLog.Main     	-----------------------                            
+{INFO}	10-01-2021 Sunday EST 20:02:37	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:02:37	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:02:37	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:02:37	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:02:37	consoleLog.Main     	3)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:02:38	consoleLog.Main     	Enter Your Email:                                  
+{INFO}	10-01-2021 Sunday EST 20:02:43	consoleLog.Main     	Enter Your Password:                               
+{INFO}	10-01-2021 Sunday EST 20:02:46	consoleLog.Main     	Customer [customer_id=1, first_name=Juan, last_name=Alcantara, dob=null, gender=null, ssn=0, address=null, phone=0, email=null, password=null] 
+{INFO}	10-01-2021 Sunday EST 20:02:46	consoleLog.Main     	                                                   
+{INFO}	10-01-2021 Sunday EST 20:02:46	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:02:46	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:02:46	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:02:46	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:02:46	consoleLog.Main     	3)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:03:11	consoleLog.Main     	Welcome to Chase Bank                              
+{INFO}	10-01-2021 Sunday EST 20:03:11	consoleLog.Main     	-----------------------                            
+{INFO}	10-01-2021 Sunday EST 20:03:11	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:03:11	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:03:11	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:03:11	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:03:11	consoleLog.Main     	3)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:03:12	consoleLog.Main     	Enter Your Email:                                  
+{INFO}	10-01-2021 Sunday EST 20:03:16	consoleLog.Main     	Enter Your Password:                               
+{INFO}	10-01-2021 Sunday EST 20:03:19	consoleLog.Main     	Customer [customer_id=1, first_name=Juan, last_name=Alcantara, dob=1990-01-02, gender=M, ssn=111111111, address=123 Creston Ave, phone=8005551234, email=juan231f@yahoo.com, password=password1] 
+{INFO}	10-01-2021 Sunday EST 20:03:19	consoleLog.Main     	                                                   
+{INFO}	10-01-2021 Sunday EST 20:03:19	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:03:19	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:03:19	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:03:19	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:03:19	consoleLog.Main     	3)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:05:18	consoleLog.Main     	Welcome to Chase Bank                              
+{INFO}	10-01-2021 Sunday EST 20:05:18	consoleLog.Main     	-----------------------                            
+{INFO}	10-01-2021 Sunday EST 20:05:18	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:05:18	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:05:18	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:05:18	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:05:18	consoleLog.Main     	3)Employee Login                                   
+{INFO}	10-01-2021 Sunday EST 20:05:18	consoleLog.Main     	4)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:05:52	consoleLog.Main     	Welcome to Chase Bank                              
+{INFO}	10-01-2021 Sunday EST 20:05:52	consoleLog.Main     	-----------------------                            
+{INFO}	10-01-2021 Sunday EST 20:05:52	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:05:52	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:05:52	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:05:52	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:05:52	consoleLog.Main     	3)Employee Login                                   
+{INFO}	10-01-2021 Sunday EST 20:05:52	consoleLog.Main     	4)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:05:59	consoleLog.Main     	Welcome to Chase Bank                              
+{INFO}	10-01-2021 Sunday EST 20:05:59	consoleLog.Main     	-----------------------                            
+{INFO}	10-01-2021 Sunday EST 20:05:59	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:05:59	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:05:59	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:05:59	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:05:59	consoleLog.Main     	3)Employee Login                                   
+{INFO}	10-01-2021 Sunday EST 20:05:59	consoleLog.Main     	4)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:06:01	consoleLog.Main     	
+Still Working on it3!
+                            
+{INFO}	10-01-2021 Sunday EST 20:06:01	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:06:01	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:06:01	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:06:01	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:06:01	consoleLog.Main     	3)Employee Login                                   
+{INFO}	10-01-2021 Sunday EST 20:06:01	consoleLog.Main     	4)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:06:13	consoleLog.Main     	Welcome to Chase Bank                              
+{INFO}	10-01-2021 Sunday EST 20:06:13	consoleLog.Main     	-----------------------                            
+{INFO}	10-01-2021 Sunday EST 20:06:13	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:06:13	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:06:13	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:06:13	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:06:13	consoleLog.Main     	3)Employee Login                                   
+{INFO}	10-01-2021 Sunday EST 20:06:13	consoleLog.Main     	4)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:06:16	consoleLog.Main     	
+Still Working on it!
+                             
+{INFO}	10-01-2021 Sunday EST 20:06:16	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:06:16	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:06:16	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:06:16	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:06:16	consoleLog.Main     	3)Employee Login                                   
+{INFO}	10-01-2021 Sunday EST 20:06:16	consoleLog.Main     	4)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:06:21	consoleLog.Main     	Welcome to Chase Bank                              
+{INFO}	10-01-2021 Sunday EST 20:06:21	consoleLog.Main     	-----------------------                            
+{INFO}	10-01-2021 Sunday EST 20:06:21	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:06:21	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:06:21	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:06:21	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:06:21	consoleLog.Main     	3)Employee Login                                   
+{INFO}	10-01-2021 Sunday EST 20:06:21	consoleLog.Main     	4)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:06:24	consoleLog.Main     	Enter Your Email:                                  
+{INFO}	10-01-2021 Sunday EST 20:07:50	consoleLog.Main     	Welcome to Chase Bank                              
+{INFO}	10-01-2021 Sunday EST 20:07:50	consoleLog.Main     	-----------------------                            
+{INFO}	10-01-2021 Sunday EST 20:07:50	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:07:50	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:07:50	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:07:50	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:07:50	consoleLog.Main     	3)Employee Login                                   
+{INFO}	10-01-2021 Sunday EST 20:07:50	consoleLog.Main     	4)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:07:52	consoleLog.Main     	Loging into your account
+
+                         
+{INFO}	10-01-2021 Sunday EST 20:07:52	consoleLog.Main     	Enter Your Email:                                  
+{INFO}	10-01-2021 Sunday EST 20:08:01	consoleLog.Main     	Enter Your Password:                               
+{INFO}	10-01-2021 Sunday EST 20:08:06	consoleLog.Main     	Welcome to Chase Bank                              
+{INFO}	10-01-2021 Sunday EST 20:08:06	consoleLog.Main     	-----------------------                            
+{INFO}	10-01-2021 Sunday EST 20:08:06	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:08:06	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:08:06	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:08:06	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:08:06	consoleLog.Main     	3)Employee Login                                   
+{INFO}	10-01-2021 Sunday EST 20:08:06	consoleLog.Main     	4)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:08:09	consoleLog.Main     	Register Now
+
+                                     
+{INFO}	10-01-2021 Sunday EST 20:08:09	consoleLog.Main     	Enter Your First Name:                             
+{INFO}	10-01-2021 Sunday EST 20:08:14	consoleLog.Main     	Welcome to Chase Bank                              
+{INFO}	10-01-2021 Sunday EST 20:08:14	consoleLog.Main     	-----------------------                            
+{INFO}	10-01-2021 Sunday EST 20:08:14	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:08:14	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:08:14	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:08:14	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:08:14	consoleLog.Main     	3)Employee Login                                   
+{INFO}	10-01-2021 Sunday EST 20:08:14	consoleLog.Main     	4)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:08:16	consoleLog.Main     	Register Now
+
+                                     
+{INFO}	10-01-2021 Sunday EST 20:08:16	consoleLog.Main     	Enter Your First Name:                             
+{INFO}	10-01-2021 Sunday EST 20:08:38	consoleLog.Main     	Welcome to Chase Bank                              
+{INFO}	10-01-2021 Sunday EST 20:08:38	consoleLog.Main     	-----------------------                            
+{INFO}	10-01-2021 Sunday EST 20:08:38	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:08:38	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:08:38	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:08:38	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:08:38	consoleLog.Main     	3)Employee Login                                   
+{INFO}	10-01-2021 Sunday EST 20:08:38	consoleLog.Main     	4)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:08:43	consoleLog.Main     	Register Now
+
+                                     
+{INFO}	10-01-2021 Sunday EST 20:08:43	consoleLog.Main     	Enter Your First Name:                             
+{INFO}	10-01-2021 Sunday EST 20:09:14	consoleLog.Main     	Welcome to Chase Bank                              
+{INFO}	10-01-2021 Sunday EST 20:09:14	consoleLog.Main     	-----------------------                            
+{INFO}	10-01-2021 Sunday EST 20:09:14	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:09:14	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:09:14	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:09:14	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:09:14	consoleLog.Main     	3)Employee Login                                   
+{INFO}	10-01-2021 Sunday EST 20:09:14	consoleLog.Main     	4)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:09:29	consoleLog.Main     	Welcome to Chase Bank                              
+{INFO}	10-01-2021 Sunday EST 20:09:29	consoleLog.Main     	-----------------------                            
+{INFO}	10-01-2021 Sunday EST 20:09:29	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:09:29	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:09:29	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:09:29	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:09:29	consoleLog.Main     	3)Employee Login                                   
+{INFO}	10-01-2021 Sunday EST 20:09:29	consoleLog.Main     	4)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:09:59	consoleLog.Main     	Welcome to Chase Bank                              
+{INFO}	10-01-2021 Sunday EST 20:09:59	consoleLog.Main     	-----------------------                            
+{INFO}	10-01-2021 Sunday EST 20:09:59	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:09:59	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:09:59	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:09:59	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:09:59	consoleLog.Main     	3)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:10:10	consoleLog.Main     	Welcome to Chase Bank                              
+{INFO}	10-01-2021 Sunday EST 20:10:10	consoleLog.Main     	-----------------------                            
+{INFO}	10-01-2021 Sunday EST 20:10:10	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:10:10	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:10:10	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:10:10	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:10:10	consoleLog.Main     	3)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:10:30	consoleLog.Main     	Welcome to Chase Bank                              
+{INFO}	10-01-2021 Sunday EST 20:10:30	consoleLog.Main     	-----------------------                            
+{INFO}	10-01-2021 Sunday EST 20:10:30	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:10:30	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:10:30	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:10:30	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:10:30	consoleLog.Main     	3)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:10:33	consoleLog.Main     	
+Thank You For Visiting Chase Bank, have a nice day!
+ 
+{INFO}	10-01-2021 Sunday EST 20:11:18	consoleLog.Main     	Welcome to Chase Bank                              
+{INFO}	10-01-2021 Sunday EST 20:11:18	consoleLog.Main     	-----------------------                            
+{INFO}	10-01-2021 Sunday EST 20:11:18	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:11:18	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:11:18	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:11:18	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:11:18	consoleLog.Main     	3)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:11:21	consoleLog.Main     	
+Thank You For Visiting Chase Bank, have a nice day!
+ 
+{INFO}	10-01-2021 Sunday EST 20:11:24	consoleLog.Main     	Welcome to Chase Bank                              
+{INFO}	10-01-2021 Sunday EST 20:11:24	consoleLog.Main     	-----------------------                            
+{INFO}	10-01-2021 Sunday EST 20:11:24	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:11:24	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:11:24	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:11:24	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:11:24	consoleLog.Main     	3)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:11:26	consoleLog.Main     	
+Invalid Menu Option. Choose from the given Options.
+ 
+{INFO}	10-01-2021 Sunday EST 20:11:26	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:11:26	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:11:26	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:11:26	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:11:26	consoleLog.Main     	3)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:11:34	consoleLog.Main     	Enter Your Email:                                  
+{INFO}	10-01-2021 Sunday EST 20:11:41	consoleLog.Main     	Enter Your Password:                               
+{ERROR}	10-01-2021 Sunday EST 20:11:44	consoleLog.Main     	Log in Failed, enter the correct email and password 
+{INFO}	10-01-2021 Sunday EST 20:11:44	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:11:44	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:11:44	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:11:44	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:11:44	consoleLog.Main     	3)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:12:16	consoleLog.Main     	Welcome to Chase Bank                              
+{INFO}	10-01-2021 Sunday EST 20:12:16	consoleLog.Main     	-----------------------                            
+{INFO}	10-01-2021 Sunday EST 20:12:16	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:12:16	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:12:16	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:12:16	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:12:16	consoleLog.Main     	3)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:12:19	consoleLog.Main     	Enter Your Email:                                  
+{INFO}	10-01-2021 Sunday EST 20:12:24	consoleLog.Main     	Enter Your Password:                               
+{ERROR}	10-01-2021 Sunday EST 20:12:29	consoleLog.Main     	Log in Failed, enter a correct email and password  
+{INFO}	10-01-2021 Sunday EST 20:12:29	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:12:29	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:12:29	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:12:29	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:12:29	consoleLog.Main     	3)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:12:43	consoleLog.Main     	Enter Your Email:                                  
+{INFO}	10-01-2021 Sunday EST 20:12:53	consoleLog.Main     	Enter Your Password:                               
+{INFO}	10-01-2021 Sunday EST 20:12:56	consoleLog.Main     	Customer [customer_id=1, first_name=Juan, last_name=Alcantara, dob=1990-01-02, gender=M, ssn=111111111, address=123 Creston Ave, phone=8005551234, email=juan231f@yahoo.com, password=password1] 
+{INFO}	10-01-2021 Sunday EST 20:12:56	consoleLog.Main     	                                                   
+{INFO}	10-01-2021 Sunday EST 20:12:56	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:12:56	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:12:56	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:12:56	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:12:56	consoleLog.Main     	3)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:13:55	consoleLog.Main     	Welcome to Chase Bank                              
+{INFO}	10-01-2021 Sunday EST 20:13:55	consoleLog.Main     	-----------------------                            
+{INFO}	10-01-2021 Sunday EST 20:13:55	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:13:55	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:13:55	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:13:55	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:13:55	consoleLog.Main     	3)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:13:59	consoleLog.Main     	Enter Your Email:                                  
+{INFO}	10-01-2021 Sunday EST 20:14:04	consoleLog.Main     	Enter Your Password:                               
+{INFO}	10-01-2021 Sunday EST 20:14:07	consoleLog.Main     	                                                   
+{INFO}	10-01-2021 Sunday EST 20:14:07	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:14:07	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:14:07	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:14:07	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:14:07	consoleLog.Main     	3)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:16:04	consoleLog.Main     	Welcome to Chase Bank                              
+{INFO}	10-01-2021 Sunday EST 20:16:04	consoleLog.Main     	-----------------------                            
+{INFO}	10-01-2021 Sunday EST 20:16:04	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:16:04	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:16:04	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:16:04	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:16:04	consoleLog.Main     	3)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:16:07	consoleLog.Main     	Enter Your Email:                                  
+{INFO}	10-01-2021 Sunday EST 20:16:18	consoleLog.Main     	Enter Your Password:                               
+{ERROR}	10-01-2021 Sunday EST 20:16:21	consoleLog.Main     	Log in Failed, enter a correct email and password  
+{INFO}	10-01-2021 Sunday EST 20:16:21	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:16:21	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:16:21	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:16:21	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:16:21	consoleLog.Main     	3)EXIT                                             
+{INFO}	10-01-2021 Sunday EST 20:16:51	consoleLog.Main     	Enter Your Email:                                  
+{INFO}	10-01-2021 Sunday EST 20:17:06	consoleLog.Main     	Enter Your Password:                               
+{ERROR}	10-01-2021 Sunday EST 20:17:32	consoleLog.Main     	Log in Failed, enter a correct email and password  
+{INFO}	10-01-2021 Sunday EST 20:17:32	consoleLog.Main     	Customer Options                                   
+{INFO}	10-01-2021 Sunday EST 20:17:32	consoleLog.Main     	=======================                            
+{INFO}	10-01-2021 Sunday EST 20:17:32	consoleLog.Main     	1)Login                                            
+{INFO}	10-01-2021 Sunday EST 20:17:32	consoleLog.Main     	2)Sign Up                                          
+{INFO}	10-01-2021 Sunday EST 20:17:32	consoleLog.Main     	3)EXIT                                             
