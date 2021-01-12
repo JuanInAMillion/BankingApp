@@ -14,7 +14,7 @@ import com.bank.model.Customer;
 public class CustomerDAOImpl implements CustomerDAO{
 	
 	@Override
-	public Customer verifyLogin(String email, String password) throws BusinessException {
+	public Customer customerVerifyLogin(String email, String password) throws BusinessException {
 		Customer customer= null;
 		
 		try ( Connection connection = PostgresSqlConnection.getConnection() ) {

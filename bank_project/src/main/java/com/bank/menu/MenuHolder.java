@@ -5,27 +5,30 @@ import java.util.Scanner;
 import org.apache.log4j.Logger;
 
 import com.bank.dao.CustomerDAO;
+import com.bank.dao.EmployeeDAO;
 import com.bank.dao.impl.CustomerDAOImpl;
+import com.bank.dao.impl.EmployeeDAOImpl;
 import com.bank.exception.BusinessException;
 import com.bank.model.Customer;
+import com.bank.model.Employee;
 
 public class MenuHolder {
 	private static Logger log=Logger.getLogger("consoleLog.Main");
 	
 	//Customer Login
 	public void customerLogin(Scanner sc, Customer customer) {
-		String email ="";
-		String password = "";
+		String customeremail ="";
+		String customerpassword = "";
 		
 		CustomerDAO login = new CustomerDAOImpl();
 		
 		log.info("Enter Your Email: ");
-		email = sc.nextLine();
+		customeremail = sc.nextLine();
 		log.info("Enter Your Password: ");
-		password = sc.nextLine();
+		customerpassword = sc.nextLine();
 		
 		try {
-			Customer c = login.verifyLogin(email, password);
+			Customer c = login.customerVerifyLogin(customeremail, customerpassword);
 			customerMenu();
 			if (c!=null) {
 				log.info("");
@@ -40,12 +43,14 @@ public class MenuHolder {
 		Scanner sc = new Scanner(System.in);
 		int ch = 0;
 		do {
+			log.info("");
 			log.info("Customer Options");
 			log.info("=======================");
 			log.info("1)Withdraw");
 			log.info("2)Deposit");
 			log.info("3)Check Balance");
 			log.info("4)EXIT");
+			log.info("");
 			try {
 				ch=Integer.parseInt(sc.nextLine());
 			} catch(NumberFormatException e) {}
@@ -101,6 +106,64 @@ public class MenuHolder {
 			log.error(e.getMessage());
 		}
 		
-		
 	}
+
+	
+	//Employee Sign in
+	public void employeeLogin(Scanner sc, Employee employee) {
+		String employeeemail ="";
+		String employeepassword = "";
+		
+		EmployeeDAO login = new EmployeeDAOImpl();
+		
+		log.info("Enter Your Email: ");
+		employeeemail = sc.nextLine();
+		log.info("Enter Your Password: ");
+		employeepassword = sc.nextLine();
+		
+		try {
+			Employee em = login.employeeVerifyLogin(employeeemail, employeepassword);
+			employeeMenu();
+			if (em!=null) {
+				log.info("");
+			}
+		} catch (BusinessException e) {
+			log.error(e.getMessage());
+		}
+	}
+	
+	//Employee menu after Login
+	public static void employeeMenu() {
+		Scanner sc = new Scanner(System.in);
+		int ch = 0;
+		do {
+			log.info("Hello Chase Employee");
+			log.info("=======================");
+			log.info("1)View All Customers");
+			log.info("2)Locate Customer By Email");
+			log.info("3)EXIT");
+			log.info("");
+			try {
+				ch=Integer.parseInt(sc.nextLine());
+			} catch(NumberFormatException e) {}
+			
+			switch(ch) {
+			case 1:
+				log.info("\nView All Customers\n");
+				break;
+			case 2:
+				log.info("\nLocate Customer By Email\n");
+				break;
+			case 3:
+				log.info("\nThank You For Visiting Chase Bank, have a nice day!\n");
+				break;
+			default:
+				log.info("\nInvalid Menu Option. Choose from the given Options.\n");
+				break;
+			}
+		} while(ch != 3);
+	}
+
+	
+	
 }
