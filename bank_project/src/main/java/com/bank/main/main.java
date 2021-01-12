@@ -26,7 +26,7 @@ private static Logger log=Logger.getLogger("consoleLog.Main");
 			log.info("\nChoose an Options");
 			log.info("=======================");
 			log.info("1)Login");
-			log.info("2)Sign Up");
+			log.info("2)Register");
 			log.info("3)Employee Login");
 			log.info("4)EXIT");
 			log.info("");

@@ -5,11 +5,14 @@ import java.util.Scanner;
 
 import org.apache.log4j.Logger;
 
+import com.bank.dao.AccountDAO;
 import com.bank.dao.CustomerDAO;
 import com.bank.dao.EmployeeDAO;
+import com.bank.dao.impl.AccountDAOImpl;
 import com.bank.dao.impl.CustomerDAOImpl;
 import com.bank.dao.impl.EmployeeDAOImpl;
 import com.bank.exception.BusinessException;
+import com.bank.model.Account;
 import com.bank.model.Customer;
 import com.bank.model.Employee;
 
@@ -46,10 +49,11 @@ public class MenuOptions {
 		do {
 			log.info("\nCustomer Options");
 			log.info("=======================");
-			log.info("1)Withdraw");
-			log.info("2)Deposit");
-			log.info("3)Check Balance");
-			log.info("4)EXIT");
+			log.info("1)Create an Account");
+			log.info("2)Withdraw");
+			log.info("3)Deposit");
+			log.info("4)Check Balance");
+			log.info("5)EXIT");
 			log.info("");
 			try {
 				ch=Integer.parseInt(sc.nextLine());
@@ -57,22 +61,63 @@ public class MenuOptions {
 			
 			switch(ch) {
 			case 1:
-				log.info("\nWithdraw\n");
+				int account_id, customer_id;
+				String account_type;
+				double balance;
+				
+				AccountDAO createAccount = new AccountDAOImpl();
+					
+				log.info("Enter An Account#: ");
+				account_id = Integer.parseInt(sc.nextLine());
+				log.info("Enter Your Customer ID: ");
+				customer_id = Integer.parseInt(sc.nextLine());
+				log.info("Do Want Checking or Savings Account? ");
+				account_type = sc.nextLine();
+				log.info("Choose an initial Deposit Ammount");
+				balance = Double.parseDouble(sc.nextLine());
+				
+				Account c = new Account(account_id, customer_id, account_type, balance);	
+				try {
+					if(createAccount.createAccount(c)!=0) {
+						log.info(account_type + " account created successfully with a balance of " + balance +"\n");
+					}
+				} catch(BusinessException e) {
+					log.error(e.getMessage());
+				}
 				break;
 			case 2:
-				log.info("\nDeposit\n");
+				log.info("\nWithdraw\n");
 				break;
 			case 3:
-				log.info("\nCheck Balance\n");
-				break;
+				log.info("\nDeposit\n");
+				break;		
 			case 4:
+				AccountDAO dao = new AccountDAOImpl();
+				int accountID;
+				
+				log.info("What is the Account ID? ");
+				accountID = Integer.parseInt(sc.nextLine());
+				
+				try {
+					Account checkBalanceByAccountID = dao.checkBalance(accountID);
+					log.info("\nYour Balance is "+accountID +" was found.");
+					log.info("\n"+ checkBalanceByAccountID.toString());
+					if (checkBalanceByAccountID!=null) {
+						log.info("");
+					}
+				} catch (BusinessException e) {
+					log.error(e.getMessage());
+				}
+				 
+				break;
+			case 5:
 				log.info("\nThank You For Visiting Chase Bank, have a nice day!\n");
 				break;
 			default:
 				log.info("\nInvalid Menu Option. Choose from the given Options.\n");
 				break;
 			}
-		} while(ch != 4);
+		} while(ch != 5);
 	}
 	
 	//Customer Registration
@@ -100,7 +145,7 @@ public class MenuOptions {
 		Customer c = new Customer(first_name, last_name,  gender, address, phone, email, password);	
 		try {
 			if(register.createCustomer(c)!=0) {
-				log.info("Registration Successful. Please wait until your are approved before you Login\n\n");
+				log.info("Registration Successful. Please Login\n");
 			}
 		} catch(BusinessException e) {
 			log.error(e.getMessage());
