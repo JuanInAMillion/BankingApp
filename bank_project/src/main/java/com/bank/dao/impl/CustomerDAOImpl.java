@@ -28,9 +28,7 @@ public class CustomerDAOImpl implements CustomerDAO{
 				customer.setCustomer_id(resultSet.getInt("customer_id"));
 				customer.setFirst_name(resultSet.getString("first_name"));
 				customer.setLast_name(resultSet.getString("last_name"));
-				customer.setDob(resultSet.getString("dob"));
 				customer.setGender(resultSet.getString("gender"));
-				customer.setSsn(resultSet.getLong("ssn"));
 				customer.setAddress(resultSet.getString("address"));
 				customer.setPhone(resultSet.getLong("phone"));
 				customer.setEmail(resultSet.getString("email"));
@@ -52,18 +50,16 @@ public class CustomerDAOImpl implements CustomerDAO{
 	public int createCustomer(Customer customer) throws BusinessException {
 		int c = 0;
 		try (Connection connection = PostgresSqlConnection.getConnection()){	
-			String sql = "insert into bank.customer(customer_id, first_name, last_name, dob, gender, ssn, address, phone, email, password) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?,?)";	
+			String sql = "insert into bank.customer(customer_id, first_name, last_name, gender, address, phone, email, password) VALUES(?, ?, ?, ?, ?, ?, ?, ?)";	
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			preparedStatement.setInt(1, customer.getCustomer_id());
 			preparedStatement.setString(2, customer.getFirst_name());
 			preparedStatement.setString(3, customer.getLast_name());
-			preparedStatement.setString(4, customer.getDob());
-			preparedStatement.setString(5, customer.getGender());
-			preparedStatement.setLong(6, customer.getSsn());
-			preparedStatement.setString(7, customer.getAddress());
-			preparedStatement.setLong(8, customer.getPhone());
-			preparedStatement.setString(9, customer.getEmail());
-			preparedStatement.setString(10, customer.getPassword());
+			preparedStatement.setString(4, customer.getGender());
+			preparedStatement.setString(5, customer.getAddress());
+			preparedStatement.setLong(6, customer.getPhone());
+			preparedStatement.setString(7, customer.getEmail());
+			preparedStatement.setString(8, customer.getPassword());
 			c = preparedStatement.executeUpdate();
 		} catch (ClassNotFoundException | SQLException e) {
 			throw new BusinessException("Internal error occured contact SYSADMIN");

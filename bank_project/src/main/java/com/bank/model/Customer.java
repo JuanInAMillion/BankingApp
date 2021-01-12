@@ -5,9 +5,7 @@ public class Customer {
 	private int customer_id;
 	private String first_name;
 	private String last_name;
-	private String dob;
 	private String gender;
-	private long ssn;
 	private String address;
 	private long phone;
 	private String email;
@@ -17,15 +15,26 @@ public class Customer {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Customer(int customer_id, String first_name, String last_name, String dob, String gender, long ssn,
-			String address, long phone, String email, String password) {
+	public Customer(int customer_id, String first_name, String last_name, String gender, String address, long phone,
+			String email, String password) {
 		super();
 		this.customer_id = customer_id;
 		this.first_name = first_name;
 		this.last_name = last_name;
-		this.dob = dob;
 		this.gender = gender;
-		this.ssn = ssn;
+		this.address = address;
+		this.phone = phone;
+		this.email = email;
+		this.password = password;
+	}
+	
+	//Constructor without customer_id to create new to record using serial auto increment for customer_id
+	public Customer(String first_name, String last_name, String gender, String address, long phone, String email,
+			String password) {
+		super();
+		this.first_name = first_name;
+		this.last_name = last_name;
+		this.gender = gender;
 		this.address = address;
 		this.phone = phone;
 		this.email = email;
@@ -56,28 +65,12 @@ public class Customer {
 		this.last_name = last_name;
 	}
 
-	public String getDob() {
-		return dob;
-	}
-
-	public void setDob(String dob) {
-		this.dob = dob;
-	}
-
 	public String getGender() {
 		return gender;
 	}
 
 	public void setGender(String gender) {
 		this.gender = gender;
-	}
-
-	public long getSsn() {
-		return ssn;
-	}
-
-	public void setSsn(long ssn) {
-		this.ssn = ssn;
 	}
 
 	public String getAddress() {
@@ -103,7 +96,7 @@ public class Customer {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
+
 	public String getPassword() {
 		return password;
 	}
@@ -115,8 +108,8 @@ public class Customer {
 	@Override
 	public String toString() {
 		return "Customer [customer_id=" + customer_id + ", first_name=" + first_name + ", last_name=" + last_name
-				+ ", dob=" + dob + ", gender=" + gender + ", ssn=" + ssn + ", address=" + address + ", phone=" + phone
-				+ ", email=" + email + ", password=" + password + "]";
+				+ ", gender=" + gender + ", address=" + address + ", phone=" + phone + ", email=" + email
+				+ ", password=" + password + "]";
 	}
 
 	
