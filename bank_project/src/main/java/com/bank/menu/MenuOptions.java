@@ -1,5 +1,6 @@
 package com.bank.menu;
 
+import java.util.List;
 import java.util.Scanner;
 
 import org.apache.log4j.Logger;
@@ -12,7 +13,7 @@ import com.bank.exception.BusinessException;
 import com.bank.model.Customer;
 import com.bank.model.Employee;
 
-public class MenuHolder {
+public class MenuOptions {
 	private static Logger log=Logger.getLogger("consoleLog.Main");
 	
 	//Customer Login
@@ -43,8 +44,7 @@ public class MenuHolder {
 		Scanner sc = new Scanner(System.in);
 		int ch = 0;
 		do {
-			log.info("");
-			log.info("Customer Options");
+			log.info("\nCustomer Options");
 			log.info("=======================");
 			log.info("1)Withdraw");
 			log.info("2)Deposit");
@@ -116,7 +116,7 @@ public class MenuHolder {
 		
 		EmployeeDAO login = new EmployeeDAOImpl();
 		
-		log.info("Enter Your Email: ");
+		log.info("Enter Your Employee Email: ");
 		employeeemail = sc.nextLine();
 		log.info("Enter Your Password: ");
 		employeepassword = sc.nextLine();
@@ -134,25 +134,52 @@ public class MenuHolder {
 	
 	//Employee menu after Login
 	public static void employeeMenu() {
+		EmployeeDAO dao = new EmployeeDAOImpl();
 		Scanner sc = new Scanner(System.in);
 		int ch = 0;
 		do {
-			log.info("Hello Chase Employee");
+			log.info("\nHello Chase Employee");
 			log.info("=======================");
 			log.info("1)View All Customers");
 			log.info("2)Locate Customer By Email");
-			log.info("3)EXIT");
-			log.info("");
+			log.info("3)EXIT\n");
 			try {
 				ch=Integer.parseInt(sc.nextLine());
 			} catch(NumberFormatException e) {}
 			
 			switch(ch) {
 			case 1:
-				log.info("\nView All Customers\n");
+		  		// get all customers from the list	
+				try {
+					List<Customer> customerList = dao.getAllCustomers();
+					if(customerList!=null && customerList.size()!=0) {
+						log.info("\n\nFound " + customerList.size() + " no of customer in DB.... Printing them all");
+						for(Customer c: customerList) {
+							log.info(c);
+						}
+					}
+				} catch (BusinessException e) {
+					log.error(e.getMessage());
+				}
+		
 				break;
 			case 2:
-				log.info("\nLocate Customer By Email\n");
+				//search by email
+				String email = "";
+				
+				log.info("Enter The Customer Email You Are Searching: ");
+				email = sc.nextLine();
+				try {
+					Customer customerByEmail = dao.getCustomerByEmail(email);
+					log.info("\nCustomer with the email "+email +" was found.");
+					log.info("\n"+ customerByEmail.toString());
+					if (customerByEmail!=null) {
+						log.info("");
+					}
+				} catch (BusinessException e) {
+					log.error(e.getMessage());
+				}
+
 				break;
 			case 3:
 				log.info("\nThank You For Visiting Chase Bank, have a nice day!\n");

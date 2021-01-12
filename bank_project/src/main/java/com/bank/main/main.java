@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import org.apache.log4j.Logger;
 
-import com.bank.menu.MenuHolder;
+import com.bank.menu.MenuOptions;
 import com.bank.model.Customer;
 import com.bank.model.Employee;
 
@@ -14,7 +14,7 @@ public class main {
 private static Logger log=Logger.getLogger("consoleLog.Main");
 	
 	public static void main(String[] args) {
-		MenuHolder mh = new MenuHolder();
+		MenuOptions menuoptions = new MenuOptions();
 		Customer customer = null;
 		Employee employee = null;
 		
@@ -25,8 +25,7 @@ private static Logger log=Logger.getLogger("consoleLog.Main");
 		
 		int ch = 0;
 		do {
-			log.info("");
-			log.info("Choose an Options");
+			log.info("\nChoose an Options");
 			log.info("=======================");
 			log.info("1)Login");
 			log.info("2)Sign Up");
@@ -39,13 +38,13 @@ private static Logger log=Logger.getLogger("consoleLog.Main");
 			
 			switch(ch) {
 			case 1:
-				mh.customerLogin(sc,customer);
+				menuoptions.customerLogin(sc,customer);
 				break;
 			case 2:
-				mh.customerSignUp(sc,customer);
+				menuoptions.customerSignUp(sc,customer);
 				break;
 			case 3:
-				mh.employeeLogin(sc, employee);
+				menuoptions.employeeLogin(sc, employee);
 				break;
 			case 4:
 				log.info("\nThank You For Visiting Chase Bank, have a nice day!\n");
