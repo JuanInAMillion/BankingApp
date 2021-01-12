@@ -17,12 +17,10 @@ private static Logger log=Logger.getLogger("consoleLog.Main");
 		MenuOptions menuoptions = new MenuOptions();
 		Customer customer = null;
 		Employee employee = null;
-		
 		Scanner sc = new Scanner(System.in);
 		
 		log.info("Welcome to Chase Bank");
 		log.info("-----------------------");
-		
 		int ch = 0;
 		do {
 			log.info("\nChoose an Options");

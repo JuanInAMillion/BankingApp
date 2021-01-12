@@ -1,0 +1,28 @@
+{INFO}	12-01-2021 Tuesday EST 01:58:06	consoleLog.Main     	Welcome to Chase Bank                              
+{INFO}	12-01-2021 Tuesday EST 01:58:06	consoleLog.Main     	-----------------------                            
+{INFO}	12-01-2021 Tuesday EST 01:58:06	consoleLog.Main     	
+Choose an Options                                 
+{INFO}	12-01-2021 Tuesday EST 01:58:06	consoleLog.Main     	=======================                            
+{INFO}	12-01-2021 Tuesday EST 01:58:06	consoleLog.Main     	1)Login                                            
+{INFO}	12-01-2021 Tuesday EST 01:58:06	consoleLog.Main     	2)Sign Up                                          
+{INFO}	12-01-2021 Tuesday EST 01:58:06	consoleLog.Main     	3)Employee Login                                   
+{INFO}	12-01-2021 Tuesday EST 01:58:06	consoleLog.Main     	4)EXIT                                             
+{INFO}	12-01-2021 Tuesday EST 01:58:06	consoleLog.Main     	                                                   
+{INFO}	12-01-2021 Tuesday EST 01:58:09	consoleLog.Main     	Enter Your First Name:                             
+{INFO}	12-01-2021 Tuesday EST 01:58:14	consoleLog.Main     	Enter Your Last Name:                              
+{INFO}	12-01-2021 Tuesday EST 01:58:18	consoleLog.Main     	Enter Your gender: M or F                          
+{INFO}	12-01-2021 Tuesday EST 01:58:20	consoleLog.Main     	Enter Your Address:                                
+{INFO}	12-01-2021 Tuesday EST 01:58:29	consoleLog.Main     	Enter Your Phone# 8005551234:                      
+{INFO}	12-01-2021 Tuesday EST 01:58:44	consoleLog.Main     	Enter Your Email:                                  
+{INFO}	12-01-2021 Tuesday EST 01:58:51	consoleLog.Main     	Enter Your Password:                               
+{INFO}	12-01-2021 Tuesday EST 01:59:04	consoleLog.Main     	Registration Successful. Please wait until your are approved before you Login
+
+ 
+{INFO}	12-01-2021 Tuesday EST 01:59:04	consoleLog.Main     	
+Choose an Options                                 
+{INFO}	12-01-2021 Tuesday EST 01:59:04	consoleLog.Main     	=======================                            
+{INFO}	12-01-2021 Tuesday EST 01:59:04	consoleLog.Main     	1)Login                                            
+{INFO}	12-01-2021 Tuesday EST 01:59:04	consoleLog.Main     	2)Sign Up                                          
+{INFO}	12-01-2021 Tuesday EST 01:59:04	consoleLog.Main     	3)Employee Login                                   
+{INFO}	12-01-2021 Tuesday EST 01:59:04	consoleLog.Main     	4)EXIT                                             
+{INFO}	12-01-2021 Tuesday EST 01:59:04	consoleLog.Main     	                                                   

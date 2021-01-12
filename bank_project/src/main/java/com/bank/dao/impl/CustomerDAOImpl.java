@@ -50,16 +50,15 @@ public class CustomerDAOImpl implements CustomerDAO{
 	public int createCustomer(Customer customer) throws BusinessException {
 		int c = 0;
 		try (Connection connection = PostgresSqlConnection.getConnection()){	
-			String sql = "insert into bank.customer(customer_id, first_name, last_name, gender, address, phone, email, password) VALUES(?, ?, ?, ?, ?, ?, ?, ?)";	
+			String sql = "insert into bank.customer(first_name, last_name, gender, address, phone, email, password) VALUES(?, ?, ?, ?, ?, ?, ?)";	
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
-			preparedStatement.setInt(1, customer.getCustomer_id());
-			preparedStatement.setString(2, customer.getFirst_name());
-			preparedStatement.setString(3, customer.getLast_name());
-			preparedStatement.setString(4, customer.getGender());
-			preparedStatement.setString(5, customer.getAddress());
-			preparedStatement.setLong(6, customer.getPhone());
-			preparedStatement.setString(7, customer.getEmail());
-			preparedStatement.setString(8, customer.getPassword());
+			preparedStatement.setString(1, customer.getFirst_name());
+			preparedStatement.setString(2, customer.getLast_name());
+			preparedStatement.setString(3, customer.getGender());
+			preparedStatement.setString(4, customer.getAddress());
+			preparedStatement.setLong(5, customer.getPhone());
+			preparedStatement.setString(6, customer.getEmail());
+			preparedStatement.setString(7, customer.getPassword());
 			c = preparedStatement.executeUpdate();
 		} catch (ClassNotFoundException | SQLException e) {
 			throw new BusinessException("Internal error occured contact SYSADMIN");

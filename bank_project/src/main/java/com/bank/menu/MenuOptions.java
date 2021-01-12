@@ -75,7 +75,7 @@ public class MenuOptions {
 		} while(ch != 4);
 	}
 	
-	//Customer Sign Up
+	//Customer Registration
 	public void customerSignUp(Scanner sc, Customer customer) {
 		String first_name, last_name, gender,address,email,password ;
 		long phone;
@@ -97,7 +97,7 @@ public class MenuOptions {
 		log.info("Enter Your Password: ");
 		password = sc.nextLine();
 		
-		Customer c = new Customer(4, first_name, last_name,  gender, address, phone, email, password);	
+		Customer c = new Customer(first_name, last_name,  gender, address, phone, email, password);	
 		try {
 			if(register.createCustomer(c)!=0) {
 				log.info("Registration Successful. Please wait until your are approved before you Login\n\n");
