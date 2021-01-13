@@ -10,13 +10,14 @@ public class Customer {
 	private long phone;
 	private String email;
 	private String password;
+	private String status;
 	
 	public Customer() {
 		// TODO Auto-generated constructor stub
 	}
 
 	public Customer(int customer_id, String first_name, String last_name, String gender, String address, long phone,
-			String email, String password) {
+			String email, String password, String status) {
 		super();
 		this.customer_id = customer_id;
 		this.first_name = first_name;
@@ -26,6 +27,7 @@ public class Customer {
 		this.phone = phone;
 		this.email = email;
 		this.password = password;
+		this.status = status;
 	}
 	
 	//Constructor without customer_id to create new to record using serial auto increment for customer_id
@@ -104,12 +106,20 @@ public class Customer {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
 
 	@Override
 	public String toString() {
 		return "Customer [customer_id=" + customer_id + ", first_name=" + first_name + ", last_name=" + last_name
 				+ ", gender=" + gender + ", address=" + address + ", phone=" + phone + ", email=" + email
-				+ ", password=" + password + "]";
+				+ ", password=" + password + ", status=" + status + "]";
 	}
 
 	

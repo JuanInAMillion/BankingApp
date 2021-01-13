@@ -62,15 +62,16 @@ public class EmployeeDAOImpl implements EmployeeDAO{
 				customer.setPhone(resultSet.getLong("phone"));
 				customer.setEmail(resultSet.getString("email"));
 				customer.setPassword(resultSet.getString("password"));
+				customer.setStatus(resultSet.getString("status"));
 				customerList.add(customer);
 			} 
 			if(customerList.size() == 0)
 			{
-				throw new BusinessException("No Customer in Chase bank DB so far");
+				throw new BusinessException("No Customer in Chase Bank DB so far");
 			}
 		} catch (ClassNotFoundException | SQLException e) {
 			System.out.println(e);
-			throw new BusinessException("Internal error occured contact SYSADMIN ");
+			throw new BusinessException("Internal error occured contact SYSADMIN");
 		}		
 		return customerList  ;
 	}
@@ -93,14 +94,29 @@ public class EmployeeDAOImpl implements EmployeeDAO{
 				customer.setPhone(resultSet.getLong("phone"));
 				customer.setEmail(resultSet.getString("email"));
 				customer.setPassword(resultSet.getString("password"));
-				
+				customer.setStatus(resultSet.getString("status"));	
 			}else {
 				throw new BusinessException("No customer found with email: "+ email);
 			}
 		} catch (ClassNotFoundException | SQLException e) {
-			throw new BusinessException("Internal error occured contact sysadmin");
+			throw new BusinessException("Internal error occured contact SYSADMIN");
 		}
 		return customer;
+	}
+	
+	@Override
+	public int registerCustomer(int customer_id, String statusChange) throws BusinessException {
+		int s = 0;
+		try (Connection connection = PostgresSqlConnection.getConnection()) {
+			String sql = "update bank.customer set status=? where customer_id=?";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setString(1, statusChange);
+			preparedStatement.setInt(2, customer_id);
+			s = preparedStatement.executeUpdate();
+		} catch (ClassNotFoundException | SQLException e) {
+			throw new BusinessException("Internal error occured contact SYSADMIN");
+		}
+		return s;
 	}
 	
 }

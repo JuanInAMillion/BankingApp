@@ -198,6 +198,7 @@ public class MenuOptions {
 		
 		try {
 			Employee em = login.employeeVerifyLogin(employeeemail, employeepassword);
+			log.info("\nWelcome " +em.getFirst_name() + " " + em.getLast_name() +" here are your task for the day");
 			employeeMenu();
 			if (em!=null) {
 				log.info("");
@@ -213,11 +214,12 @@ public class MenuOptions {
 		Scanner sc = new Scanner(System.in);
 		int ch = 0;
 		do {
-			log.info("\nHello Chase Employee");
 			log.info("=======================");
 			log.info("1)View All Customers");
 			log.info("2)Locate Customer By Email");
-			log.info("3)EXIT\n");
+			log.info("3)View All Pending Accounts");
+			log.info("4)Approve customer registration");
+			log.info("5)EXIT\n");
 			try {
 				ch=Integer.parseInt(sc.nextLine());
 			} catch(NumberFormatException e) {}
@@ -254,16 +256,33 @@ public class MenuOptions {
 				} catch (BusinessException e) {
 					log.error(e.getMessage());
 				}
-
 				break;
 			case 3:
+				//Register a customer
+				int customerIdNum;	
+				String pendingStatus;
+					
+				log.info("Enter Customers Id#: ");
+				customerIdNum = Integer.parseInt(sc.nextLine());
+				log.info("type: active or denied");
+				pendingStatus = sc.nextLine();
+				
+				try {
+					dao.registerCustomer(customerIdNum, pendingStatus);
+					log.info("Customer Registered");
+				} catch (BusinessException e) {
+					log.error(e.getMessage());
+				}
+		
+				break;
+			case 4:
 				log.info("\nThank You For Visiting Chase Bank, have a nice day!\n");
 				break;
 			default:
 				log.info("\nInvalid Menu Option. Choose from the given Options.\n");
 				break;
 			}
-		} while(ch != 3);
+		} while(ch != 4);
 	}
 
 	

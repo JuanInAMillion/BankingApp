@@ -42,7 +42,6 @@ public class AccountDAOImpl implements AccountDAO{
 			preparedStatement.setInt(2, account_id);
 			w = preparedStatement.executeUpdate();
 		} catch (ClassNotFoundException | SQLException e) {
-			System.out.println(e);
 			throw new BusinessException("Internal error occured contact SYSADMIN");
 		}
 		return w;
@@ -58,7 +57,6 @@ public class AccountDAOImpl implements AccountDAO{
 			preparedStatement.setInt(2, account_id);
 			d = preparedStatement.executeUpdate();
 		} catch (ClassNotFoundException | SQLException e) {
-			System.out.println(e);
 			throw new BusinessException("Internal error occured contact SYSADMIN");
 		}
 		return d;

@@ -18,7 +18,7 @@ public class CustomerDAOImpl implements CustomerDAO{
 		Customer customer= null;
 		
 		try ( Connection connection = PostgresSqlConnection.getConnection() ) {
-			String sql = "select * from bank.customer where email = ? and password = ?;";
+			String sql = "select * from bank.customer where email = ? and password = ? and status ='active' ";
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			preparedStatement.setString(1, email);
 			preparedStatement.setString(2, password);	
@@ -32,15 +32,16 @@ public class CustomerDAOImpl implements CustomerDAO{
 				customer.setAddress(resultSet.getString("address"));
 				customer.setPhone(resultSet.getLong("phone"));
 				customer.setEmail(resultSet.getString("email"));
-				customer.setPassword(resultSet.getString("password"));	
-			}
+				customer.setPassword(resultSet.getString("password"));
+				customer.setStatus(resultSet.getString("status"));
+			} 
 			else
-				throw new BusinessException("Log in Failed, enter a correct email and password");
+				throw new BusinessException("You either entered a wrong email or password, or your registration is pending");
 				
 		} catch (ClassNotFoundException e) {
-			System.out.println(e);
+			
 		} catch (SQLException e) {
-			System.out.println(e);
+			
 		}
 		
 		return customer;
