@@ -7,9 +7,11 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.bank.dao.AccountDAO;
 import com.bank.dao.EmployeeDAO;
 import com.bank.dao.dbutil.PostgresSqlConnection;
 import com.bank.exception.BusinessException;
+import com.bank.model.Account;
 import com.bank.model.Customer;
 import com.bank.model.Employee;
 
@@ -74,6 +76,32 @@ public class EmployeeDAOImpl implements EmployeeDAO{
 			throw new BusinessException("Internal error occured contact SYSADMIN");
 		}		
 		return customerList  ;
+	}
+	
+	@Override 
+	public List<Account> getAllBankAccounts() throws BusinessException {
+		List<Account> accountList=new ArrayList<>();
+		try (Connection connection = PostgresSqlConnection.getConnection()) {
+			String sql = "select * from bank.account";
+			PreparedStatement preparedStatement=connection.prepareStatement(sql); 
+			ResultSet resultSet = preparedStatement.executeQuery();
+			while(resultSet.next()) {
+				Account account = new Account();
+				account.setAccount_id(resultSet.getInt("account_id"));
+				account.setCustomer_id(resultSet.getInt("customer_id"));
+				account.setAccount_type(resultSet.getString("account_type"));
+				account.setBalance(resultSet.getDouble("balance"));
+				accountList.add(account);
+			} 
+			if(accountList.size() == 0)
+			{
+				throw new BusinessException("No Customer in Chase Bank DB so far");
+			}
+		} catch (ClassNotFoundException | SQLException e) {
+			System.out.println(e);
+			throw new BusinessException("Internal error occured contact SYSADMIN");
+		}		
+		return accountList  ;
 	}
 
 	@Override

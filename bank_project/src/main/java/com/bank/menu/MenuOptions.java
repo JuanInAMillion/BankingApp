@@ -216,9 +216,10 @@ public class MenuOptions {
 		do {
 			log.info("=======================");
 			log.info("1)View All Customers");
-			log.info("2)Locate Customer By Email");
-			log.info("3)Approve customer registration");
-			log.info("4)EXIT\n");
+			log.info("2)View All Bank Accounts");
+			log.info("3)Locate Customer By Email");
+			log.info("4)Approve customer registration");
+			log.info("5)EXIT\n");
 			try {
 				ch=Integer.parseInt(sc.nextLine());
 			} catch(NumberFormatException e) {}
@@ -229,7 +230,7 @@ public class MenuOptions {
 				try {
 					List<Customer> customerList = dao.getAllCustomers();
 					if(customerList!=null && customerList.size()!=0) {
-						log.info("\n\nFound " + customerList.size() + " no of customer in DB.... Printing them all");
+						log.info("\n\nFound " + customerList.size() + " customers in DB.... Printing them all");
 						for(Customer c: customerList) {
 							log.info(c);
 						}
@@ -240,6 +241,21 @@ public class MenuOptions {
 		
 				break;
 			case 2:
+		  		// get all customers from the list	
+				try {
+					List<Account> accountList = dao.getAllBankAccounts();
+					if(accountList!=null && accountList.size()!=0) {
+						log.info("\n\nFound " + accountList.size() + " bank accounts in DB.... Printing them all");
+						for(Account a: accountList) {
+							log.info(a);
+						}
+					}
+				} catch (BusinessException e) {
+					log.error(e.getMessage());
+				}
+		
+				break;
+			case 3:
 				//search by email
 				String email = "";
 				
@@ -256,7 +272,7 @@ public class MenuOptions {
 					log.error(e.getMessage());
 				}
 				break;
-			case 3:
+			case 4:
 				//Register a customer
 				int customerIdNum;	
 				String pendingStatus;
@@ -274,14 +290,14 @@ public class MenuOptions {
 				}
 		
 				break;
-			case 4:
+			case 5:
 				log.info("\nThank You For Visiting Chase Bank, have a nice day!\n");
 				break;
 			default:
 				log.info("\nInvalid Menu Option. Choose from the given Options.\n");
 				break;
 			}
-		} while(ch != 4);
+		} while(ch != 5);
 	}
 
 	
