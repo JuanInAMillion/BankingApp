@@ -4,6 +4,7 @@
 
 -- DROP TABLE bank.customer;
 
+
 CREATE TABLE bank.customer (
 	customer_id serial NOT NULL,
 	first_name varchar NOT NULL,
@@ -13,6 +14,7 @@ CREATE TABLE bank.customer (
 	phone int8 NOT NULL,
 	email varchar NOT NULL,
 	"password" varchar NOT NULL,
+	status varchar NULL DEFAULT 'pending'::character varying,
 	CONSTRAINT customer_pk PRIMARY KEY (customer_id),
 	CONSTRAINT customer_un UNIQUE (email)
 );
