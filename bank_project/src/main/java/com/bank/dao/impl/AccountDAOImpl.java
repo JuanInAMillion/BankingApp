@@ -9,7 +9,6 @@ import com.bank.dao.AccountDAO;
 import com.bank.dao.dbutil.PostgresSqlConnection;
 import com.bank.exception.BusinessException;
 import com.bank.model.Account;
-import com.bank.model.Customer;
 
 public class AccountDAOImpl implements AccountDAO{
 
@@ -63,10 +62,11 @@ public class AccountDAOImpl implements AccountDAO{
 				throw new BusinessException("No account found with id: "+ account_id);
 			}
 		} catch (ClassNotFoundException | SQLException e) {
-			throw new BusinessException("Internal error occured contact sysadmin");
+			throw new BusinessException("Internal error occured contact SYSADMIN");
 		}
 		return account;
 		 
 	}
+	
 
 }

@@ -94,13 +94,13 @@ public class MenuOptions {
 			case 4:
 				AccountDAO dao = new AccountDAOImpl();
 				int accountID;
+			
 				
 				log.info("What is the Account ID? ");
 				accountID = Integer.parseInt(sc.nextLine());
 				
 				try {
 					Account checkBalanceByAccountID = dao.checkBalance(accountID);
-					log.info("\nYour Balance is "+accountID +" was found.");
 					log.info("\n"+ checkBalanceByAccountID.toString());
 					if (checkBalanceByAccountID!=null) {
 						log.info("");

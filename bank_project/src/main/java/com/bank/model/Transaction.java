@@ -26,6 +26,18 @@ public class Transaction {
 		this.amount = amount;
 		this.balance = balance;
 	}
+	
+	//with transaction id for auto increment
+	public Transaction(int account_id, Date date, String description, String type, double amount,
+			double balance) {
+		super();
+		this.account_id = account_id;
+		this.date = date;
+		this.description = description;
+		this.type = type;
+		this.amount = amount;
+		this.balance = balance;
+	}
 
 	public int getTransaction_id() {
 		return transaction_id;
