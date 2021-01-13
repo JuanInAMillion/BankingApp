@@ -175,7 +175,7 @@ public class MenuOptions {
 		Customer c = new Customer(first_name, last_name,  gender, address, phone, email, password);	
 		try {
 			if(register.createCustomer(c)!=0) {
-				log.info("Registration Successful. Please Login\n");
+				log.info("Registration Successful. Your status is pending until an employee approves you\n");
 			}
 		} catch(BusinessException e) {
 			log.error(e.getMessage());
@@ -217,9 +217,8 @@ public class MenuOptions {
 			log.info("=======================");
 			log.info("1)View All Customers");
 			log.info("2)Locate Customer By Email");
-			log.info("3)View All Pending Accounts");
-			log.info("4)Approve customer registration");
-			log.info("5)EXIT\n");
+			log.info("3)Approve customer registration");
+			log.info("4)EXIT\n");
 			try {
 				ch=Integer.parseInt(sc.nextLine());
 			} catch(NumberFormatException e) {}
