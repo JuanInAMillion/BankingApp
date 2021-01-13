@@ -15,9 +15,11 @@ import com.bank.exception.BusinessException;
 import com.bank.model.Account;
 import com.bank.model.Customer;
 import com.bank.model.Employee;
+import com.bank.service.MenuService;
+import com.bank.service.impl.MenuServiceImpl;
 
 public class MenuOptions {
-	private static Logger log=Logger.getLogger("consoleLog.Main");
+	private static Logger log=Logger.getLogger("consoleLog.MenuOptions");
 	
 	//Customer Login
 	public void customerLogin(Scanner sc, Customer customer) {
@@ -33,6 +35,8 @@ public class MenuOptions {
 		
 		try {
 			Customer c = login.customerVerifyLogin(customeremail, customerpassword);
+			log.info("\nWelcome " +c.getFirst_name()+ " here is your info:");
+			log.info("\n"+ c.toString());
 			customerMenu();
 			if (c!=null) {
 				log.info("");
@@ -86,22 +90,48 @@ public class MenuOptions {
 				}
 				break;
 			case 2:
-				log.info("\nWithdraw\n");
+				double amount;
+				MenuService serviceWithdraw = new MenuServiceImpl();
+				AccountDAO daoWithdraw = new AccountDAOImpl();
+				log.info("Enter An Account#:");
+				account_id = Integer.parseInt(sc.nextLine());
+				log.info("How much would you like to withdraw");
+				amount = Double.parseDouble(sc.nextLine());
+				
+				try {
+					double depositBalance = serviceWithdraw.withdrawAmount(account_id, amount);
+					daoWithdraw.withdrawFromAccount(account_id, depositBalance);
+				} catch (BusinessException e) {
+					log.error(e.getMessage());
+				}
+		
 				break;
 			case 3:
-				log.info("\nDeposit\n");
+				MenuService serviceDeposit = new MenuServiceImpl();
+				AccountDAO daoDeposit = new AccountDAOImpl();
+				log.info("Enter An Account#:");
+				account_id = Integer.parseInt(sc.nextLine());
+				log.info("How much would you like to deposit");
+				amount = Double.parseDouble(sc.nextLine());
+				
+				try {
+					double depositBalance = serviceDeposit.depositAmount(account_id, amount);
+					daoDeposit.depositToAccount(account_id, depositBalance);
+				} catch (BusinessException e) {
+					log.error(e.getMessage());
+				}
+					
 				break;		
 			case 4:
-				AccountDAO dao = new AccountDAOImpl();
+				AccountDAO checkbalance = new AccountDAOImpl();
 				int accountID;
 			
-				
 				log.info("What is the Account ID? ");
 				accountID = Integer.parseInt(sc.nextLine());
 				
 				try {
-					Account checkBalanceByAccountID = dao.checkBalance(accountID);
-					log.info("\n"+ checkBalanceByAccountID.toString());
+					Account checkBalanceByAccountID = checkbalance.checkBalance(accountID);
+					log.info("\nYour balance is: $"+ checkBalanceByAccountID.getBalance());
 					if (checkBalanceByAccountID!=null) {
 						log.info("");
 					}

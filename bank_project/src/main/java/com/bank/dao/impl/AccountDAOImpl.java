@@ -33,19 +33,39 @@ public class AccountDAOImpl implements AccountDAO{
 
 	@Override
 	public int withdrawFromAccount(int account_id, double newBalance) throws BusinessException {
-		// TODO Auto-generated method stub
-		return 0;
+		
+		int w = 0;
+		try (Connection connection = PostgresSqlConnection.getConnection()) {
+			String sql = "update bank.account set balance=? where account_id=?";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setDouble(1, newBalance);
+			preparedStatement.setInt(2, account_id);
+			w = preparedStatement.executeUpdate();
+		} catch (ClassNotFoundException | SQLException e) {
+			System.out.println(e);
+			throw new BusinessException("Internal error occured contact SYSADMIN");
+		}
+		return w;
 	}
-
+	
 	@Override
 	public int depositToAccount(int account_id, double newBalance) throws BusinessException {
-		// TODO Auto-generated method stub
-		return 0;
+		int d = 0;
+		try (Connection connection = PostgresSqlConnection.getConnection()) {
+			String sql = "update bank.account set balance=? where account_id=?";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setDouble(1, newBalance);
+			preparedStatement.setInt(2, account_id);
+			d = preparedStatement.executeUpdate();
+		} catch (ClassNotFoundException | SQLException e) {
+			System.out.println(e);
+			throw new BusinessException("Internal error occured contact SYSADMIN");
+		}
+		return d;
 	}
 
 	@Override
 	public Account checkBalance(int account_id) throws BusinessException {
-		
 		Account account = null;	
 		try(Connection connection = PostgresSqlConnection.getConnection()){
 			String sql = "select * from bank.account where account_id =?";
@@ -67,6 +87,7 @@ public class AccountDAOImpl implements AccountDAO{
 		return account;
 		 
 	}
+	
 	
 
 }
