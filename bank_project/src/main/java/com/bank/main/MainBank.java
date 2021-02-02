@@ -9,9 +9,9 @@ import com.bank.model.Customer;
 import com.bank.model.Employee;
 
 
-public class main {
+public class MainBank {
 	
-private static Logger log=Logger.getLogger("consoleLog.Main");
+private static Logger log=Logger.getLogger("consoleLog.MainBank");
 	
 	public static void main(String[] args) {
 		MenuOptions menuoptions = new MenuOptions();
@@ -52,7 +52,7 @@ private static Logger log=Logger.getLogger("consoleLog.Main");
 				break;
 			}
 		} while(ch != 4);
-		
+	
 	}
 
 }

@@ -148,6 +148,7 @@ public class MenuOptions {
 				break;
 			}
 		} while(ch != 5);
+	
 	}
 	
 	//Customer Registration
@@ -180,7 +181,7 @@ public class MenuOptions {
 		} catch(BusinessException e) {
 			log.error(e.getMessage());
 		}
-		
+	
 	}
 
 	
@@ -206,6 +207,7 @@ public class MenuOptions {
 		} catch (BusinessException e) {
 			log.error(e.getMessage());
 		}
+	
 	}
 	
 	//Employee menu after Login
@@ -298,6 +300,7 @@ public class MenuOptions {
 				break;
 			}
 		} while(ch != 5);
+		
 	}
 
 	
